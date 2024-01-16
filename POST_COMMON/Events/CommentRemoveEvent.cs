@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace POST_COMMON.Events
 {
-    public class MessageUpdatedEvent : BaseEvent
+    public class CommentRemoveEvent : BaseEvent
     {
-        public MessageUpdatedEvent() : base(nameof(MessageUpdatedEvent))
+        public CommentRemoveEvent() : base(nameof(CommentRemoveEvent))
         {
         }
-        public string Message { get; set; }
+        public Guid CommentId { get; set; }
     }
 }

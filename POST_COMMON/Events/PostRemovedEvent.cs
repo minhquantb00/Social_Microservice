@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace POST_COMMON.Events
 {
-    public class MessageUpdatedEvent : BaseEvent
+    public class PostRemovedEvent : BaseEvent
     {
-        public MessageUpdatedEvent() : base(nameof(MessageUpdatedEvent))
+        public PostRemovedEvent() : base(nameof(PostRemovedEvent))
         {
         }
-        public string Message { get; set; }
     }
 }
